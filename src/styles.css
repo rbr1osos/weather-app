@@ -1,0 +1,16 @@
+.hourly-title{
+    color:red;
+}
+.hourly-content-container{
+    display:flex;
+    gap:16px;
+}
+
+.hour-container{
+    padding:16px;
+    margin:8px;
+    border:1px solid black;
+    display:flex;
+    gap:16px;
+    flex-direction: column;
+}
