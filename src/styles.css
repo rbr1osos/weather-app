@@ -8,6 +8,7 @@ body{
     margin:0;
     display:flex;
     justify-content: center;
+    align-items: center;
 }
 .container{
     display:flex;
@@ -18,13 +19,16 @@ body{
 .header{
     text-align: center;
 }
+.search-container{
+    display:flex;
+}
 #search{
     width:800px;
 }
 
 .content{
     width:800;
-    height:1144px;
+    max-height:1500px;
     display:grid;
     grid-template:114px 1fr / 1fr 1fr;
     grid-column-gap:8px;
@@ -33,6 +37,7 @@ body{
 .hourly-title{
     color:red;
 }
+
 .hourly-content-container{
     display:flex;
     gap:16px;
@@ -53,6 +58,64 @@ body{
 }
 .right-container{
     grid-area: 2/2/3/3;
-    background-color: red;
+    background-color: white;
+    display:flex;
+    gap:6px;
+    flex-direction: column;
+    
+}
 
+.small-container{
+    grid-column-gap:6px;
+    grid-row-gap:6px;
+}
+
+.UV-container, 
+.wind-container,
+.humidity-container,
+.chance-container,
+.sunrise-container,
+.sunset-container,
+.pressure-container,
+.visibility-container{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    padding:8px;
+    border:1px solid orange;
+    gap:4px;
+    font-size:14px;
+}
+
+.UV-container h3,
+.wind-container h3,
+.humidity-container h3,
+.chance-container h3,
+.sunrise-container h3,
+.sunset-container h3,
+.pressure-container h3,
+.visibility-container h3
+{
+    margin:0;
+    font-size: 18px;
+}
+
+.UV-container p,
+.wind-container p,
+.humidity-container p,
+.chance-container p,
+.sunrise-container p,
+.sunset-container p,
+.pressure-container p,
+.visibility-container p{
+    margin:0;
+
+}
+.UV-container h3, .wind-container h3{
+    font-size:20px;
+}
+
+.small-container{
+    display:grid;
+    grid-template:1fr 1fr / 1fr 1fr;
 }
