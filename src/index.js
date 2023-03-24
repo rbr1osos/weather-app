@@ -27,7 +27,6 @@ function displayWeather(data,forecast){
     for(let i=0;i<forecastArray.length;i++){
         showHourData(forecastArray[i])
     }
-
     function showHourData(data){
         const container = document.querySelector('.hourly-content-container')
         const content= document.createElement('div')
@@ -44,7 +43,6 @@ function displayWeather(data,forecast){
         content.appendChild(hour)
         content.appendChild(temp)
         container.appendChild(content)
-        // console.log(data)
     }
 
 
